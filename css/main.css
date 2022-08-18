@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Pinyon+Script&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgb(79, 0, 79), black);
+}
+
+#wrapper {
+  background-image: url(../images/backgroundCurtain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px dashed goldenrod;
+  border-radius: 2rem;
+  height: auto;
+  margin: 6rem auto;
+  padding: 5rem;
+  width: 95%;
+}
+
+h1,
+h2 {
+  font-family: 'Pinyon Script', cursive;
+  color: goldenrod;
+}
+
+h1 {
+  font-size: 6rem;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+ul {
+  font-family: 'IBM Plex Serif', serif;
+  list-style: none;
+}
+
+li {
+  font-weight: bold;
+  color: goldenrod;
+}
+
+a {
+  color: goldenrod;
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+}
+
+p {
+  font-family: 'IBM Plex Serif', serif;
+  color: green;
+  padding: 1.5rem;
+  font-weight: bold;
+}
+
+img {
+  border-radius: 20%;
+}
+
+.flip-card {
+  margin: auto;
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  border: 3px solid goldenrod;
+  box-shadow: 10px 10px;
+  border-radius: 20%;
+  perspective: 1000px; 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 20%;
+}
+
+.flip-card-back {
+  background-color: rgb(41, 0, 41);
+  color: white;
+  border-radius: 20%;
+  transform: rotateY(180deg);
+}
+
+footer {
+  display: inline;
+}
+
+footer h2 {
+  padding-top: 6rem;
+  text-align: center;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+}
