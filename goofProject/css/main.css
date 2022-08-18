@@ -1,0 +1,84 @@
+* {
+  text-align: center;
+}
+
+body {
+  background-image: url(../images/minion.jpg);
+  background-size: auto;
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  border: red dashed 2px;
+  box-shadow: 0 0 50px green;
+}
+
+h1 {
+  background-color: aquamarine;
+  color: darkmagenta;
+  text-align: center;
+  padding: 1rem;
+  font-size: 44px;
+  margin: 5rem;
+  box-shadow: 0 0 30px red;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: 5px 5px 90px red;
+}
+
+h3 {
+  background-color: blue;
+  color: white;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+}
+
+em {
+  color: green;
+  font-size: 50px;
+}
+
+li a {
+  text-decoration: none;
+  color: darkblue;
+  font-size: 26px;
+  margin: 0;
+}
+
+li a:hover {
+  background-color: hotpink;
+  color: white;
+}
+p {
+  background-color: yellowgreen;
+  color: blue;
+  font-size: 25px;
+}
+
+h2 {
+  text-align: center;
+  background-color: blueviolet;
+  color: aquamarine;
+}
+
+ul li {
+  text-align: center;
+  background-color: orange;
+  color: darkgreen;
+  list-style: lower-greek;
+  border-bottom: red dashed 4px;
+  width: 44%;
+  font-size: 22px;
+}
+
+
+#video {
+  background-color: blueviolet;
+  text-align: center;
+  border-radius: 30%;
+}
