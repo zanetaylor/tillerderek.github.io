@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*********** Navigation **********/
+
+nav {
+  background-color: #000;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+li {
+  border-right: #fff 1px dashed;
+  display: inline-block;
+}
+
+a {
+  color: #fff;
+  padding: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #45a428;
+}
+
+li:last-child {
+  border: none;
+}
+
+/*********** Main Content **********/
+
+#wrapper {
+  background-color: rgba(244, 4, 200, 0.176);
+  border: #000 2px dashed;
+  padding: 1rem;
+  margin: auto;
+  width: 90%;
+}
+
+main {
+  margin-top: 2rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 2fr 1fr 0.5fr;
+}
+
+.coolblocks {
+  padding: 0.5rem;
+  background-color: #11ffb0;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  border-bottom: #000 1px dashed;
+  margin: 0;
+}
+
+img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*********** Footer **********/
+
+footer {
+  margin-top: 10rem;
+  font-style: italic;
+}
+
+/*********** Fluid text calc ***********/
+
+@media only screen and (max-width: 1920px) {
+  a {
+    font-size: calc(30px + (40 - 30) * (100vw - 450px) / (1920 - 450));
+  }
+  h1 {
+    font-size: calc(38px + (48 - 38) * (100vw - 450px) / (1920 - 450));
+  }
+
+  h2 {
+    font-size: calc(18px + (28 - 18) * (100vw - 450px) / (1920 - 450));
+  }
+
+  p {
+    font-size: calc(16px + (26 - 16) * (100vw - 450px) / (1920 - 450));
+  }
+}
+
+/*********** 650px breakpoint for nav borders, padding and main content display change **********/
+
+@media only screen and (max-width: 650px) {
+  ul {
+    padding-inline-start: 0;
+  }
+  li {
+    align-content: center;
+    border-right: none;
+    display: flexbox;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*********** Minimum font size 450px breakpoint **********/
+
+@media only screen and (max-width: 450px) {
+  nav {
+    background-color: #0059ff;
+  }
+  #wrapper {
+    background-color: #ea02ff;
+  }
+  a {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .coolblocks {
+    background-color: #38ff01;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/*********** All images are from the Internet Archive at www.gifcities.org**********/
