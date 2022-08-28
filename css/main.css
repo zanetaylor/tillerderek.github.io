@@ -10,6 +10,8 @@ html {
 
 body {
   background: linear-gradient(rgb(79, 0, 79), black);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #wrapper {
