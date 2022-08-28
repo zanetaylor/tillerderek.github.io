@@ -49,7 +49,7 @@ ul {
   background: -webkit-linear-gradient(goldenrod,white 30px,goldenrod,rgb(184, 100, 44));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;s
+  background-clip: text;
   font-family: 'IBM Plex Serif', serif;
   list-style: none;
 }
