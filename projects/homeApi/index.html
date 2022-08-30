@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>API Time</h1>
+      <p>Lets Go</p>
+      <button id="refresher" type="submit" onClick="refreshPage()">restart</button>
+    </header>
+    <main>
+      <h2>Unlock the door plz</h2>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <img id="drag1" src="assets/key.png" draggable="true" ondragstart="drag(event)" width="244" height="100">
+      <div id="div2"></div>
+
+      <div class="container">
+        <input id="show" class="btn" type="image" src="assets/doormat.png" border="0" alt="Submit">
+        <!-- <button id="show" class="btn">Click Me!</button> -->
+        <div id="message"></div>
+      </div>
+      <script src="script.js"></script>
+
+      <div id="clicker">
+        <h2>Pet Me Please</h2>
+          <input id="dog" class="dogg" type="image" src="assets/dog.png" border="0" alt="Submit" width="400" height="500" onclick="clickCounter()">
+        <div id="result"></div>
+        <p>Click the dog to see the counter increase.</p>
+        <p>Close the browser tab (or click the refresh button above the door), and try again, and the dog will continue to count <b>(HE REMEMBERS)</b>.</p>
+      </div>
+    </main>
+
+  </body>
+
+</html>
