@@ -1,0 +1,68 @@
+:root {
+  --font-size-large: 1.5rem;
+  --big-background: purple;
+}
+
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#57205e+0,f399ff+23,f2b35c+51,7db9e8+100 */
+  background: #57205e; /* Old browsers */
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #57205e 0%,
+    #f399ff 23%,
+    #f2b35c 51%,
+    #7db9e8 100%
+  ); /* FF3.6-15 */
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #57205e 0%,
+    #f399ff 23%,
+    #f2b35c 51%,
+    #7db9e8 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(
+    ellipse at center,
+    #57205e 0%,
+    #f399ff 23%,
+    #f2b35c 51%,
+    #7db9e8 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57205e', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-attachment: fixed;
+  background-repeat: no repeat;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: aqua;
+  -webkit-text-stroke: 2px goldenrod;
+}
+
+.wrapper {
+  font-size: var(--font-size-large);
+  background-color: var(--big-background);
+  border: 8px double lightseagreen;
+  width: 60%;
+  margin: auto;
+  border-radius: 25px;
+}
+
+h1,
+p,
+footer {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.drummer {
+  padding: 0.75rem;
+  display: block;
+  margin: 0.5rem auto 0 auto;
+}
+
+img {
+  padding: 1rem;
+  display: block;
+  margin: auto;
+  border: 10px solid goldenrod;
+  border-radius: 100px;
+}
