@@ -53,16 +53,12 @@ footer {
   padding-bottom: 1rem;
 }
 
-.drummer {
-  padding: 0.75rem;
-  display: block;
-  margin: 0.5rem auto 0 auto;
-}
-
 img {
-  padding: 1rem;
+  padding: 0.5rem;
   display: block;
   margin: auto;
   border: 10px solid goldenrod;
   border-radius: 100px;
+  width: 60%;
+  height: auto;
 }

@@ -14,7 +14,8 @@ request.onload = function () {
 
   var gif = document.createElement('img');
   gif.setAttribute('src', originalUrl);
-  document.body.appendChild(gif);
+  document.getElementById('random').appendChild(gif);
+  // above line is crucial and how I got the api gif into the div of the index page
 };
 
 request.onerror = function () {

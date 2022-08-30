@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Pinyon+Script&display=swap');
 
+/* universal */
+
 * {
   box-sizing: border-box;
 }
@@ -8,8 +10,10 @@ html {
   height: 100%;
 }
 
+/* main */
+
 body {
-  background: linear-gradient(rgb(79, 0, 79), black);
+  background: linear-gradient(rgb(79, 0, 79), #000);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
