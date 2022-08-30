@@ -41,7 +41,7 @@ body {
   font-size: var(--font-size-large);
   background-color: var(--big-background);
   border: 8px double lightseagreen;
-  width: 85%;
+  width: 95%;
   margin: auto;
   border-radius: 25px;
 }
