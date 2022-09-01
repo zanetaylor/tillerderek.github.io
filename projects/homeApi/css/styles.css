@@ -105,3 +105,25 @@ b {
   color: #0c8301;
   text-decoration: underline;
 }
+
+p {
+  text-align: center;
+}
+
+#pcLogOn {
+text-align: center;
+}
+
+#pcButton {
+  position: relative;
+  right: 245px;
+  bottom: 270px;
+}
+
+.fb-page {
+  position: relative;
+  left: 700px;
+  bottom: 350px;
+}
+
+
