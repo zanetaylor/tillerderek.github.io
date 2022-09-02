@@ -9,6 +9,8 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 1rem;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5728ff+1,ff7c3f+100 */
   background: #5728ff; /* Old browsers */
   background: -moz-linear-gradient(
@@ -103,7 +105,7 @@ h2 {
 /* click counter / web storage */
 
 #clicker {
-  padding: 5rem;
+  padding: 5rem 0;
   text-align: center;
 }
 
@@ -147,6 +149,11 @@ p {
   text-align: center;
 }
 
+#printer {
+  width: 100%;
+  max-width: 400px;
+}
+
 #map {
   text-align: center;
   padding: 0.5rem;
@@ -156,7 +163,8 @@ p {
 
 @media only screen and (max-width: 750px) {
   #wrapper {
-    width: fit-content;
+    /* width: fit-content; */
+    width: auto;
   }
 
   #show {
@@ -173,8 +181,9 @@ p {
   h3,
   p {
     font-size: 1rem;
-    margin: auto;
-    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: inline; */
     text-align: center;
     word-wrap: break-word;
   }
