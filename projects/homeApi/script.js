@@ -1,6 +1,10 @@
+// refresh button
+
 function refreshPage() {
   window.location.reload();
 }
+
+// drag and drop
 
 function allowDrop(ev) {
   ev.preventDefault();
@@ -17,6 +21,8 @@ function drop(ev) {
   document.getElementById('div2').innerHTML =
     'great job click down here to go home &#x2b07;';
 }
+
+// GPS geolocation
 
 (() => {
   const message = document.querySelector('#message');
@@ -50,6 +56,8 @@ function drop(ev) {
   }
 })();
 
+// click counter and local storage
+
 function clickCounter() {
   if (typeof Storage !== 'undefined') {
     if (localStorage.clickcount) {
@@ -63,12 +71,16 @@ function clickCounter() {
     document.getElementById('result').innerHTML =
       'Sorry, your browser does not support web storage...';
   }
-};
+}
+
+// facebook page plugin
 
 function showDiv() {
-  document.getElementById('fbPage').style.display = 'block';
-};
+  document.getElementById('fb-page').style.display = 'block';
+}
+
+// google maps embed
 
 function myFunction() {
   document.getElementById('map').style.display = 'block';
-};
+}

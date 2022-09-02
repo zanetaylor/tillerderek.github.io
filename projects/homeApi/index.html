@@ -6,68 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>Welcome Home</title>
     <script src="script.js"></script>
   </head>
 
   <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="b3HC1RbE"></script>
-    <header>
-      <h1>API Time</h1>
-      <p>Lets Go</p>
-      <button id="refresher" type="submit" onClick="refreshPage()">restart</button>
-    </header>
-    <main>
-      <h2>Unlock the door plz</h2>
-      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-      <br>
-      <img id="drag1" src="assets/key.png" draggable="true" ondragstart="drag(event)" width="244" height="100">
-      <div id="div2"></div>
+    <div id="wrapper">
+      <main>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="b3HC1RbE"></script>
+        <header>
+          <h1>API Time</h1>
+          <p>Lets Go</p>
+          <!-- refresh button -->
+          <button id="refresher" type="submit" onClick="refreshPage()">restart</button>
+        </header>
 
-      <div class="container">
-        <input id="show" class="btn" type="image" src="assets/doormat.png" border="0" alt="Submit">
-        <div id="message"></div>
-      </div>
-      <script src="script.js"></script>
-
-      <div id="clicker">
-        <h2>Pet Me Please</h2>
-        <input id="dog" class="dogg" type="image" src="assets/dog.png" border="0" alt="Submit" width="400" height="500" onclick="clickCounter()">
-        <div id="result"></div>
-        <p>Click the dog to see the counter increase.</p>
-        <p>Close the browser tab (or click the refresh button above the door), and try again, and the dog will continue to count <b>(HE REMEMBERS)</b>.</p>
-      </div>
-      <h2>Scroll on over to ur PC</h2>
-      <h2>Let's get the directions to your cousin Ricky's big bash this weekend!</h2>
-      <p>Better check his FB for the deets:</p>
-      <div id="pcLogOn">
-        <img src="assets/pc.png" id="pc">
-        <input type="button" name="fb" value="log on" id="pcButton" onclick="showDiv()">
-      </div>
-
-      <div id="fbPage" style="display:none;">
-        <div class="fb-page" data-href="https://www.facebook.com/cuzfestproductions" data-tabs="timeline" data-width="170" data-height="140" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <!-- drag and drop -->
+        <h2>Unlock the door plz</h2>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <img id="drag1" src="assets/key.png" draggable="true" ondragstart="drag(event)" width="244" height="100" alt="An old key.">
+        <div id="div2"></div>
+        <!-- gps geolocation -->
+        <div class="container">
+          <input id="show" class="btn" type="image" src="assets/doormat.png" border="0" alt="Submit" width="610" height="205">
+          <div id="message"></div>
+        </div>
+        <script src="script.js"></script>
+        <!-- counter and local / web storage -->
+        <div id="clicker">
+          <h2>Pet Me Please</h2>
+          <input id="dog" class="dogg" type="image" src="assets/dog.png" border="0" alt="Submit" width="400" height="500" onclick="clickCounter()">
+          <div id="result"></div>
+          <p>Click the dog to see the counter increase.</p>
+          <p>Close the browser tab (or click the refresh button above the door), and try again, and the dog will continue to count <b>(HE REMEMBERS)</b>.</p>
+        </div>
+        <!-- facebook page plugin -->
+        <h2>Scroll on over to ur PC</h2>
+        <h2>Let's get the directions to your cousin Ricky's big bash this weekend!</h2>
+        <p>Better check his FB for the deets:</p>
+        <div id="pcLogOn">
+          <img src="assets/pc.png" id="pc" alt="An old pc.">
+          <input type="button" name="fb" value="log on" id="pcButton" onclick="showDiv()">
+        </div>
+        <div id="fb-page" class="fb-page" style="display:none;" data-href="https://www.facebook.com/cuzfestproductions" data-tabs="timeline" data-width="170" data-height="140" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
           <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
         </div>
-      </div>
+        <!-- google maps embed -->
+        <div id="printerHeader">
+          <h2>Better rip off a hard-copy on the printer</h2>
+          <p>Giver a tap and get those maps</p>
+        </div>
 
-      <div id="printerHeader">
-        <h2>Better rip off a hard-copy on the printer</h2>
-        <p>Giver a tap and get those maps</p>
-      </div>
+        <div id="map" style="display:none;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1174188176788!2d-123.53706151941739!3d46.24410793609119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5493811a0bb4d085%3A0xe1fea5e82ea0547e!2sDr.%20Robert%20Hume%E2%80%99s%20hideout!5e0!3m2!1sen!2sus!4v1661994072649!5m2!1sen!2sus" width="275" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
-      <div id="map" style="display:none;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1174188176788!2d-123.53706151941739!3d46.24410793609119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5493811a0bb4d085%3A0xe1fea5e82ea0547e!2sDr.%20Robert%20Hume%E2%80%99s%20hideout!5e0!3m2!1sen!2sus!4v1661994072649!5m2!1sen!2sus" width="275" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-
-      <div id="map-printer" class="map-printer">
-        <input type="image" src="assets/printer.png" name="printer" id="printer" width="500" height="280" onclick="myFunction()">
-      </div>
-
-      <div id="map" class="map" style="display:none;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2759.307827617662!2d-123.53706151941739!3d46.24410793609119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5493811a0bb4d085%3A0xe1fea5e82ea0547e!2sDr.%20Robert%20Hume%E2%80%99s%20hideout!5e0!3m2!1sen!2sus!4v1661995104306!5m2!1sen!2sus" width="300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-    </main>
+        <div id="map-printer" class="map-printer">
+          <input type="image" src="assets/printer.png" name="printer" id="printer" width="500" height="280" alt="An old printer." onclick="myFunction()">
+        </div>
+      </main>
+    </div>
 
   </body>
 
